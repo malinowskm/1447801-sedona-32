@@ -110,7 +110,7 @@ header .navigation-list-left{
 }
 footer{
   background-color:white;
-  background-image: url("/img/svg/logo_htmlacademy.svg");
+  background-image: url("../img/svg/logo_htmlacademy.svg");
   background-repeat:no-repeat;
   background-position: right bottom ;
   Width :1200px;
