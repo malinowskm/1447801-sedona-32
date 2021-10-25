@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+      li {
+       list-style-type: none;
+       	display: inline;
+      }
+     </style>
+  </head>
+  <body>
+    <header></header>
+   <main class="main-inner">
+    <section class="filter">
+      <h2 class="visually-hidden">Фильтр</h2>
+      <p>Гостиницы Седоны</p>
+      <p>Стоимость</p>
+      <label>
+        1 <input type="range" min="0" max="100" step="1" value="100">
+        100
+      </label>
+
+      <form action="#" method="get"></p>
+        <fieldset>
+          <legend>Цвет</legend>
+          <ul>
+          <li><label><input type="checkbox" name="сolor-black" value="black">черный</label></li>
+          <li><label><input type="checkbox" name="сolor-white" value="white">белый</label></li>
+          <li><label><input type="checkbox" name="сolor-blue" value="blue">синий</label></li>
+          <li><label><input type="checkbox" name="сolor-red" value="red">красный</label></li>
+          <li><label><input type="checkbox" name="сolor-pink" value="pink">розовый</label></li>
+        </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Блютуз</legend>
+          <label><input type="radio" name="equipment"  value="yes" checked> Да</label>
+          <label><input type="radio" name="equipment" value="no"> Нет</label>
+        </fieldset>
+        <button class="standart-link" type="submit"> Показать </button>
+      </form>
+    </section>
+    <div class="rating-area">
+      <input type="radio" id="star-5" name="rating" value="5">
+      <label for="star-5" title="Оценка «5»"></label>
+      <input type="radio" id="star-4" name="rating" value="4">
+      <label for="star-4" title="Оценка «4»"></label>
+      <input type="radio" id="star-3" name="rating" value="3">
+      <label for="star-3" title="Оценка «3»"></label>
+      <input type="radio" id="star-2" name="rating" value="2">
+      <label for="star-2" title="Оценка «2»"></label>
+      <input type="radio" id="star-1" name="rating" value="1">
+      <label for="star-1" title="Оценка «1»"></label>
+    </div>
+    <p>от 0 до 5000 </p>
+      <fieldset class="catalog-filter-group">
+        <legend class="catalog-filter-title">Цена</legend>
+        <button class="range-toggle toggle-min" type="button">
+          <span class="visually-hidden">Изменить минимальную цену.</span>
+        </button>
+        <button class="range-toggle toggle-max" type="button">
+          <span class="visually-hidden">Изменить максимальную цену.</span>
+        </button>
+        <p><label class="catalog-filter-label">
+          от <input class="catalog-filter-input" type="number" name="min-price"> мин.
+        </label>
+      <label>до<input class="catalog-filter-input" type="number" name="max-price">макс.
+      </label>
+   </main>
+  </body>
+
+<footer></footer>

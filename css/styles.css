@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  src: url("fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  src: url("fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  src: url("fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  src: url("fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  src: url("fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  src: url("fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+body{
+  font-family: "PT Sans", sans-serif;
+  text-align: center;
+  color: id="#333333";
+  background-color: id="#F2F2F2";
+}
+
+.visually-hidden{
+  visibility: hidden;
+}
+button {
+  background-color:#756257;
+}
+
+h2 {
+  text-transform:uppercase;
+  color: black;
+  font-size: 24px;
+  font-weight: 700;
+}
+.banner-text{
+  text-transform:uppercase;
+  color: black;
+  font-weight: 700;
+  font-size: 30px;
+}
+header {
+  background-color:white;
+  background-image: url("../img/svg/sedona_logo.svg");
+  background-repeat:no-repeat;
+  background-position: top center ;
+  text-align: left;
+  Width :1200px;
+}
+header .navigation-list-left{
+  display: inline;
+}
+.first-sreen {
+  background-image: url("../img/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat:no-repeat;
+  background-color:white;
+}
+.№1-block .№2-block{
+  background-color: #83B3D3;
+}
+.№1-block{
+  background-color: #83B3D3;
+  Width :1200px;
+
+}
+.№2-block{
+  background-color: #83B3D3;
+  Width :1200px;
+}
+.advantages2 .advantages2{
+  background-color: #F0F6FA;
+}
+.hotels-search{
+  background-color:white;
+  Width :1200px;
+}
+footer{
+  background-color:white;
+  background-image: url("../img/svg/logo_htmlacademy.svg");
+  background-repeat:no-repeat;
+  background-position: right bottom ;
+  Width :1200px;
+}
+footer li{
+  padding: 20px;}
+  .number {
+    font-size:24px;
+  }
