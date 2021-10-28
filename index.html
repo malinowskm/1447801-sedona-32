@@ -8,12 +8,12 @@
       li {
        list-style-type: none;
        	display: inline;
-         ul .menu-top > li {
+
       }
      </style>
   </head>
   <body>
-  <header class="page-header">
+  <header class="header-page-">
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
@@ -26,6 +26,7 @@
           <a class="navigation-link" href="faq.html">Гостиницы</a>
         </li>
       </ul>
+      <img class="image-logo" src="img/svg/sedona_logo.svg"  width="140" height="80" alt="Логотип Седона">
       <ul class="navigation-list-left">
         <li class="navigation-item-left">
           <a class="navigation-search" href="#">
@@ -41,17 +42,17 @@
             </span></a>
             <li class="navigation-favorite">
               <button class="standart-little" href="#">
-                <span class="button">
+                <button class="button">
                   Хочу сюда
-                </span>
+                </button>
               </ul>
 </header>
 <main>
-  <h1 сlass="visually-hidden">Главная страница</h1>
-<section class="first-sreen">
+  <h1 class="visually-hidden">Главная страница</h1>
+<section class="first-sreen"><h2 class="visually-hidden">Первый экран</h2>
   <span class="banner-text">Седона — небольшой городок в Аризоне,
     заслуживающий большего!</span>
-    <p class="label">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+    <p class="first-screen-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
 </section>
 <section class="real-town">
   <h2>Настоящий городок
@@ -59,59 +60,59 @@
   <p class="number">-№1-</p>
 <p >Седона — не аттракцион для туристов, там течёт
   своя жизнь</p>
-  <img class="block-real-town" src="/img/sedona_town.jpg" width="140" height="70" alt="Город в цветении">
+  <img class="real-town-block" src="img/sedona_town.jpg" width="800" height="384" alt="Город в цветении">
 </section>
-<section class="advantages">
+<section class="advantages-123"><h2>Преимущества</h2>
   <ul>
     <li>
-      <p class="advantages-list-1">Жильё</p>
+      <p class="advantages-1">Жильё</p>
     <p>Рекомендуем пожить
       в настоящем мотеле,
       всё как в кино!</p>
     </li>
     <li>
-      <p class="advantages-list-2">Еда</p>
+      <p class="advantages-2">Еда</p>
       <p>Всегда заказывайте
         топовый фирменный бургер, вы не разочаруетесь!</p>
       </li>
     <li>
-      <p class="advantages-list-3">Сувениры</p>
+      <p class="advantages-3">Сувениры</p>
       <p>Не только китайского,
 но и настоящего местного производства!</p>
     </li>
   </ul>
 </section>
-<section class="devil-bridge">
-    <img class="image-devil-bridge" src="/img/devil.jpg"  width="800" height="380" alt="Мост дьявола">
+<section class="devil-bridge"><h2>Дьявольский мост</h2>
+    <img class="devil-bridge-image-" src="img/devil.jpg"  width="800" height="380" alt="Мост дьявола">
     <h2>Там есть мост дьявола
 </h2>
   <p class="number">-№2-</p>
 <p >Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
 </section>
-<section class="advantages2">
+<section class="advantages-345"><h2 class="visually-hidden">Преимущества окружения</h2>
   <ul>
     <li>
-      <p class="advantages-list2-1">Небольшая
+      <p class="advantages-3">Небольшая
         площадь</p>
         <p class="number">-№3-</p>
     <p>Все достопримечательности
     находятся очень близко</p>
     </li>
     <li>
-      <p class="advantages-list2-2">Красивая
+      <p class="advantages-4">Красивая
         дорога</p>
         <p class="number">-№4-</p>
       <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
       </li>
     <li>
-      <p class="advantages-list2-3">Мало
+      <p class="advantages-5">Мало
         туристов</p>
         <p class="number">-№5-</p>
       <p>Большинство едет в Гранд Каньон и толпится там</p>
     </li>
   </ul>
 </section>
-<section class="hotels-search">
+<section class="hotels-search"><h2 class="visually-hidden">Поиск отелей</h2>
 <h2 class="visually-hidden">поиск отелей</h2>
 <p class="banner-text">
   Заинтересовались?</p>
@@ -121,8 +122,8 @@
 
 <button class="Button-big">Поиск гостиницы в Седоне</button>
 </section>
-<section class="mail">
-<span class="banner-text">Подпишитесь на рассылку</span>
+<section class="mail"> <h2 class="visually-hidden">Рассылка</h2>
+<p class="banner-text">Подпишитесь на рассылку</p>
 <p>Только полезная информация и никакого спама,
   честное бойскаутское!</p>
   <form><input type="email"  id="email" name="email" >
@@ -132,12 +133,12 @@
 </main>
 <footer>
   <ul class="social-icons">
-    <li> <button class="icon Facebook"><span class="visually-hidden">Перейти в Facebook.</span>
-    </button>
-  </li><button class="icon Youtube"><span class="visually-hidden">Перейти в Ютуб.</span>
-  </button></li>
-  </li><button class="icon Twitter"><span class="visually-hidden">Перейти в Твиттер.</span>
-    </button></li>
+    <li> <a href="#" class="icon Facebook"><span class="visually-hidden">Перейти в Facebook.</span>
+    </a>
+  <li><a hfer="#" class="icon Youtube"><span class="visually-hidden">Перейти в Ютуб.</span>
+  </a></li>
+  <li><a hfer="#"  class="icon Twitter"><span class="visually-hidden">Перейти в Твиттер.</span>
+    </a></li>
   </ul>
   <p class="number">+7 (812) 812-12-12</p>
 </footer>

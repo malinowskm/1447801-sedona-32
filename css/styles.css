@@ -46,48 +46,65 @@
   src: url("fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
-body{
+body {
   font-family: "PT Sans", sans-serif;
   text-align: center;
-  color: id="#333333";
-  background-color: id="#F2F2F2";
+  color: #333333;
+  background-color: #F2F2F2;
+}
+body .inner{text-align:right;}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-.visually-hidden{
-  visibility: hidden;
-}
 button {
   background-color:#756257;
+}
+link{
+  padding: 24px 19px;
 }
 
 h2 {
   text-transform:uppercase;
-  color: black;
+  color: #000000;
   font-size: 24px;
   font-weight: 700;
 }
 .banner-text{
   text-transform:uppercase;
-  color: black;
+  color: #000000;
   font-weight: 700;
   font-size: 30px;
 }
 header {
-  background-color:white;
-  background-image: url("../img/svg/sedona_logo.svg");
-  background-repeat:no-repeat;
-  background-position: top center ;
+  background-color:#ffffff;
   text-align: left;
   Width :1200px;
 }
 header .navigation-list-left{
   display: inline;
+  padding: 24px 19px;
+  display: block;
+
+}
+header .image-logo{
+  position:absolute;
+  left: 50% ;
+  transform:translateX(-50%);
 }
 .first-sreen {
   background-image: url("../img/index-background.jpg");
   background-size: 100% auto;
   background-repeat:no-repeat;
-  background-color:white;
+  background-color:#ffffff;
 }
 .№1-block .№2-block{
   background-color: #83B3D3;
@@ -105,11 +122,28 @@ header .navigation-list-left{
   background-color: #F0F6FA;
 }
 .hotels-search{
-  background-color:white;
+  background-color:#ffffff;
   Width :1200px;
 }
+.rating-mini {
+	display: inline-block;
+	font-size: 0;
+}
+.rating-mini span {
+	padding: 0;
+	font-size: 20px;
+	line-height: 1;
+	color: lightgrey;
+}
+.rating-mini > span:before {
+	content: '★';
+}
+.rating-mini > span.active {
+	color: gold;
+}
+
 footer{
-  background-color:white;
+  background-color:#ffffff;
   background-image: url("../img/svg/logo_htmlacademy.svg");
   background-repeat:no-repeat;
   background-position: right bottom ;
