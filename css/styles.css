@@ -52,7 +52,9 @@ body {
   color: #333333;
   background-color: #F2F2F2;
 }
-body .inner{text-align:right;}
+main .main-inner{
+  text-align:right;
+}
 
 .visually-hidden {
   position: absolute;
