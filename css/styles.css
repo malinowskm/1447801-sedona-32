@@ -54,6 +54,8 @@ body {
 }
 main .main-inner{
   text-align:right;
+  color: #333333;
+  background-color: #F2F2F2;
 }
 
 .visually-hidden {
@@ -108,15 +110,13 @@ header .image-logo{
   background-repeat:no-repeat;
   background-color:#ffffff;
 }
-.№1-block .№2-block{
-  background-color: #83B3D3;
-}
-.№1-block{
+
+.real-town-block{
   background-color: #83B3D3;
   Width :1200px;
 
 }
-.№2-block{
+.devil-bridge{
   background-color: #83B3D3;
   Width :1200px;
 }
@@ -154,6 +154,42 @@ li .pagination:first-child{
   background-color: #F2F2F2;
   color: #000000
 }
+
+
+  filter{
+    background-image: url("../img/index-background.jpg");
+    background-size: 100% auto;
+    background-repeat:no-repeat;
+    background-color:#68A2CA;
+    color: #ffffff;
+    filter: blur(10px);
+  }
+  .housing-filter {
+    background-color:#ffffff;
+  color: #000000
+  }
+  .catalog-view-сards{
+    background-image: url("../img/svg/mode");
+    background-size: 100% auto;
+    background-repeat:no-repeat;
+  }
+  .catalog-view-big{
+    background-image: url("../img/svg/mode-slideshow.svg");
+    background-position: center right;
+  }
+  .catalog-view-little{
+    background-image: url("../img/svg/mode-list.svg");
+    background-position: center right;
+  }
+  .catalog{
+    background-color:#ffffff;
+  color: #000000
+  }
+  .button-big{
+    background-color:83B3D3;
+    color:#ffffff
+  }
+
 footer{
   background-color:#ffffff;
   color: #000000;
