@@ -135,17 +135,28 @@ header .image-logo{
 	padding: 0;
 	font-size: 20px;
 	line-height: 1;
-	color: lightgrey;
+	color: #FFFFFF;
 }
 .rating-mini > span:before {
 	content: '★';
 }
 .rating-mini > span.active {
-	color: gold;
+	color:#83B3D3;
 }
-
+ .pagination{
+ background-color: #83B3D3;
+ color: #FFFFFF;
+}
+li .pagination{
+  display:inline;
+}
+li .pagination:first-child{
+  background-color: #F2F2F2;
+  color: #000000
+}
 footer{
   background-color:#ffffff;
+  color: #000000;
   background-image: url("../img/svg/logo_htmlacademy.svg");
   background-repeat:no-repeat;
   background-position: right bottom ;
