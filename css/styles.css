@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   src: url("fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
@@ -49,21 +49,32 @@
 html {
   height: 100%;
 }
+.main-container {
+  flex-grow: 1;
+}
 body {
   margin: 0;
   display: flex;
+  flex-direction: column;
   font-family: "PT Sans", sans-serif;
+  font-style :normal;
+  font-size: 18px;
   text-align: center;
   color: #333333;
   background-color: #F2F2F2;
-  Margin:40px;
-}
+  min-height: 100%;}
+
 .main-inner{
   text-align:left;
   color: #333333;
   background-color: #F2F2F2;
+  font-family: "PT Sans", sans-serif;
+  font-style :normal;
 }
-
+a {
+  text-decoration: none;
+  color: #000000;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -77,22 +88,47 @@ body {
 
 button {
   background-color:#756257;
+  color: #FFFFFF;
 }
 link{
   padding: 24px 19px;
 }
-
+h1{
+  font-family: "PT Sans", sans-serif;
+  font-style :normal;
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 700;
+}
 h2 {
   text-transform:uppercase;
   color: #000000;
   font-size: 24px;
   font-weight: 700;
 }
+li {
+  list-style-type: none;
+}
+.navigation{
+  display: flex;
+  font-size:20px;
+  Width:531px;
+  margin: left auto;
+  font-weight: 700 ;
+  font-style :normal;
+  text-decoration: none;
+}
 .banner-text{
   text-transform:uppercase;
   color: #000000;
   font-weight: 700;
   font-size: 30px;
+  font-weight: 700
+  font-style : normal;
+}
+.first-screen-text{
+  font-size: 22px;
+
 }
 header {
   background-color:#ffffff;
@@ -115,33 +151,60 @@ header .image-logo{
   background-size: 100% auto;
   background-repeat:no-repeat;
   background-color:#ffffff;
+  background-size: cover;
 }
 
 .real-town-block{
+  display: flex;
   background-color: #83B3D3;
   Width :1200px;
 
 }
 .devil-bridge{
   background-color: #83B3D3;
-  Width :1200px;
+  display: flex;
 }
-.advantages2 .advantages2{
+.advantages-123 .advantages-345{
   background-color: #F0F6FA;
 }
+.number{
+/*Font:PT Sans;
+font-weight:400;
+font-style :normal;
+font-size: 18px;
+Line-height: 22px;*/
+text-align :Center;
+}
+section .bg-filter {
+  background-image: url("../img/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat:no-repeat;
+  background-color:#68A2CA;
+  position: absolute;
+  color: #FFFFFF;
+  filter: blur(5px);
+  position: absolute;
+  z-index: 1;
+  background-size: cover;
+}
+.content-filter{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+  }
 .hotels-search{
   background-color:#ffffff;
   Width :1200px;
 }
-.filter-heading{
-  font-family: PT Sans;
+p .filter-heading{
+font-family: PT Sans;
 font-style: normal;
 font-size: 60px;
 font-weight: 700;
 line-height: 78px;
 }
-legend{
-  font-family: PT Sans;
+.legend-filter{
+font-family: PT Sans;
 font-style: normal;
 font-weight: bold;
 font-size: 20px;
@@ -185,13 +248,14 @@ li .pagination:first-child{
   color: #000000
 }
 
-  filter{
+  .filter{
     background-image: url("../img/index-background.jpg");
     background-size: 100% auto;
     background-repeat:no-repeat;
     background-color:#68A2CA;
     color: #ffffff;
     filter: blur(10px);
+    position: absolute;
   }
   .housing-filter {
     background-color:#ffffff;
@@ -215,10 +279,17 @@ li .pagination:first-child{
   color: #000000
   }
   .button-big{
-    background-color:83B3D3;
+    background-color:#83B3D3;
     color:#ffffff
   }
-
+  .mail{
+    background-color:#ffffff;
+    color:#333333
+  }
+  input{
+    background-color:#F2F2F2;;
+    color: #000000;
+  }
 footer{
   background-color:#ffffff;
   color: #000000;
