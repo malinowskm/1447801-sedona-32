@@ -14,16 +14,15 @@
     <header></header>
    <main class="main-inner">
     <section class="filter">
-      <h2 class="visually-hidden">Фильтр</h2>
-      <p class="filter-heading">Гостиницы Седоны</p>
+      <div class="bg-filter"></div>
+      <div class="content-filter"><h1>Гостиницы Седоны</h1>
       <p>Стоимость</p>
       <label>
         1 <input type="range" min="0" max="100" step="1" value="100">
         100
       </label>
-
         <fieldset>
-          <legend>инфрастуктура</legend>
+         <span class="legend-filter"> <legend>инфрастуктура</legend></span>
           <ul>
           <li><label><input type="checkbox" name="pool" value="pool">Бассеин</label></li>
           <li><label><input type="checkbox" name="сolor-white" value="white">Парковка</label></li>
@@ -31,7 +30,7 @@
         </ul>
         </fieldset>
         <fieldset>
-          <legend>Тип жилья</legend>
+          <span class="legend-filter"> <legend>Тип жилья</legend></span>
           <label><input type="radio" name="housing"  value="hosting" checked> Гостиница</label>
           <label><input type="radio" name="housing" value="hotel"> Отель</label>
           <label><input type="radio" name="housing" value="apartments"> Апартаменты</label>
@@ -39,7 +38,7 @@
         <button class="standart-link" type="submit"> Применить </button>
         <button class="standart-link" type="reset"> Сбросить </button>
        <p>от 0 до 5000 </p>
-        <legend class="catalog-filter-title">Цена</legend>
+         <span class="legend-filter"><legend >Стоимость</legend></span>
         <button class="range-toggle toggle-min" type="button">
           <span class="visually-hidden">Изменить минимальную цену.</span>
         </button>
@@ -51,9 +50,9 @@
         </label>
       <label>до<input class="catalog-filter-input" type="number" name="max-price">
       </label></fieldset>
-    </section>
+     </div></section>
     <section class="housing-filter"><h2 class="visually-hidden">Заголовок и фильтр</h2>
-    <h1>Найдено гостиниц:</h1>
+    <h2>Найдено гостиниц:</h2>
     <select id="quantity-hotels" name="quantity-hotels">
       <option>Сначала дешевые</option>
       <option>Сначала дорогие</option>
@@ -84,7 +83,7 @@
       <span class="active"></span>
       <span></span>
       <span></span>
-    </div>
+   </div>
 
     <span class="reiting">Рейтинг: 8,5</span>
 </div>

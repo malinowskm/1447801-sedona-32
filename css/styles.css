@@ -89,6 +89,8 @@ a {
 button {
   background-color:#756257;
   color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
 }
 link{
   padding: 24px 19px;
@@ -123,8 +125,8 @@ li {
   color: #000000;
   font-weight: 700;
   font-size: 30px;
-  font-weight: 700
-  font-style : normal;
+  font-weight: 700;
+  font-style :normal;
 }
 .first-screen-text{
   font-size: 22px;
@@ -167,6 +169,14 @@ header .image-logo{
 .advantages-123 .advantages-345{
   background-color: #F0F6FA;
 }
+.advantages-123 .advantages-345 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #F0F6FA;
+}
 .number{
 /*Font:PT Sans;
 font-weight:400;
@@ -175,23 +185,23 @@ font-size: 18px;
 Line-height: 22px;*/
 text-align :Center;
 }
-section .bg-filter {
+.content-filter{
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+  }
+.bg-filter {
   background-image: url("../img/index-background.jpg");
   background-size: 100% auto;
   background-repeat:no-repeat;
   background-color:#68A2CA;
-  position: absolute;
+ background-size: cover;
+ position: absolute;
   color: #FFFFFF;
   filter: blur(5px);
-  position: absolute;
   z-index: 1;
-  background-size: cover;
+
 }
-.content-filter{
-    position: relative;
-    z-index: 2;
-    color: #fff;
-  }
 .hotels-search{
   background-color:#ffffff;
   Width :1200px;
@@ -203,7 +213,7 @@ font-size: 60px;
 font-weight: 700;
 line-height: 78px;
 }
-.legend-filter{
+span .legend-filter{
 font-family: PT Sans;
 font-style: normal;
 font-weight: bold;
@@ -236,14 +246,20 @@ line-height: 26px;
 .rating-mini > span.active {
 	color:#83B3D3;
 }
- .pagination{
+.pagination{
+  background-color: #FFFFFF;
+  color: #333333;
+}
+ .pagination
+ .pagination-item{
  background-color: #83B3D3;
  color: #FFFFFF;
+ display:flex;
 }
-li .pagination{
+ .pagination.{
   display:inline;
 }
-li .pagination:first-child{
+ .pagination.pagination-item:first-child{
   background-color: #F2F2F2;
   color: #000000
 }
