@@ -2,6 +2,14 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
+  font-size: 16px;
+  src: url("fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
   font-size: 18px;
   src: url("fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
@@ -46,6 +54,7 @@
   src: url("fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
+/*ELEMENTS*/
 html {
   height: 100%;
 }
@@ -62,14 +71,25 @@ body {
   text-align: center;
   color: #333333;
   background-color: #F2F2F2;
-  min-height: 100%;}
+  min-height: 100%;
+}
 
 .main-inner{
+  display: flex;
+  flex-direction: column;
   text-align:left;
   color: #333333;
   background-color: #F2F2F2;
   font-family: "PT Sans", sans-serif;
   font-style :normal;
+  /*left:50%;
+  transform:translateX(-50%);*/
+  Width :1200px;
+}
+.sheet{
+  position: absolute;
+  left:50%;
+  transform:translateX(-50%);
 }
 a {
   text-decoration: none;
@@ -111,15 +131,30 @@ h2 {
 li {
   list-style-type: none;
 }
+/*HEADER*/
+header{
+  display: flex;
+  /*position: relative;
+  left:50%;
+  transform:translateX(-50%);*/
+  Width :1200px;
+  Height:70px;
+  background-color: #ffffff;
+  color:#000000;
+}
 .navigation{
   display: flex;
   font-size:20px;
-  Width:531px;
+  Width: 532px;
   margin: left auto;
   font-weight: 700 ;
   font-style :normal;
   text-decoration: none;
 }
+.navigation-list{
+  display: inline;
+}
+
 .banner-text{
   text-transform:uppercase;
   color: #000000;
@@ -130,32 +165,33 @@ li {
 }
 .first-screen-text{
   font-size: 22px;
+}
 
-}
-header {
-  background-color:#ffffff;
-  text-align: left;
-  Width :1200px;
-}
 header .navigation-list-left{
-  display: inline;
-  padding: 24px 19px;
-  display: block;
+  display: flex;
+  font-size:20px;
+  Width: 532px;
+  margin: left auto;
+  font-weight: 700 ;
+  font-style :normal;
+  text-decoration: none;
+}
 
-}
-header .image-logo{
-  position:absolute;
-  left: 50% ;
-  transform:translateX(-50%);
-}
+/*MAIN PAGE FIRST SCREEN*/
 .first-sreen {
+  position:relative;
+  left:50%;
+  transform:translateX(-50%);
+  Width :1200px;
+  Height:767px;
   background-image: url("../img/index-background.jpg");
   background-size: 100% auto;
   background-repeat:no-repeat;
   background-color:#ffffff;
-  background-size: cover;
+  color:#333333;
+  /*background-size: cover;*/
 }
-
+/*MAIN PAGE BLOCKS*/
 .real-town-block{
   display: flex;
   background-color: #83B3D3;
@@ -169,6 +205,7 @@ header .image-logo{
 .advantages-123 .advantages-345{
   background-color: #F0F6FA;
 }
+
 .advantages-123 .advantages-345 {
   display: flex;
   justify-content: space-between;
@@ -177,18 +214,33 @@ header .image-logo{
   text-align: center;
   color: #F0F6FA;
 }
+.advantages-apartment{
+  background-color: #F0F6FA;
+  color: #333333;
+}
+.advantages-food{
+  background-color: #ffffff;
+  color: #333333;
+}
+.advantages-suvenirs{
+  background-color: #F0F6FA;
+  color: #333333;
+}
 .number{
-/*Font:PT Sans;
-font-weight:400;
-font-style :normal;
-font-size: 18px;
-Line-height: 22px;*/
+display:flex;
 text-align :Center;
+}
+
+/*CATALOG FILTER*/
+.filter{
+  display:flex;
+  align-items: center;
 }
 .content-filter{
     position: relative;
     z-index: 2;
     color: #ffffff;
+    overflow: hidden;
   }
 .bg-filter {
   background-image: url("../img/index-background.jpg");
@@ -196,15 +248,17 @@ text-align :Center;
   background-repeat:no-repeat;
   background-color:#68A2CA;
  background-size: cover;
- position: absolute;
   color: #FFFFFF;
   filter: blur(5px);
   z-index: 1;
-
+  Width :100%;
+  height:100%;
 }
 .hotels-search{
   background-color:#ffffff;
   Width :1200px;
+  align-items: center;
+
 }
 p .filter-heading{
 font-family: PT Sans;
@@ -230,49 +284,8 @@ line-height: 26px;
   background-image: ("#");
   color: #FFFFFF;
 }
-.rating-mini {
-	display: inline-block;
-	font-size: 0;
-}
-.rating-mini span {
-	padding: 0;
-	font-size: 20px;
-	line-height: 1;
-	color: #FFFFFF;
-}
-.rating-mini > span:before {
-	content: '★';
-}
-.rating-mini > span.active {
-	color:#83B3D3;
-}
-.pagination{
-  background-color: #FFFFFF;
-  color: #333333;
-}
- .pagination
- .pagination-item{
- background-color: #83B3D3;
- color: #FFFFFF;
- display:flex;
-}
- .pagination.{
-  display:inline;
-}
- .pagination.pagination-item:first-child{
-  background-color: #F2F2F2;
-  color: #000000
-}
 
-  .filter{
-    background-image: url("../img/index-background.jpg");
-    background-size: 100% auto;
-    background-repeat:no-repeat;
-    background-color:#68A2CA;
-    color: #ffffff;
-    filter: blur(10px);
-    position: absolute;
-  }
+  /*CATALOG HOUSE FILTER*/
   .housing-filter {
     background-color:#ffffff;
   color: #000000
@@ -294,10 +307,66 @@ line-height: 26px;
     background-color:#ffffff;
   color: #000000
   }
+  /*REITING*/
+.rating-mini {
+	display: inline-block;
+	font-size: 0;
+}
+.rating-mini span {
+	padding: 0;
+	font-size: 20px;
+	line-height: 1;
+	color: #FFFFFF;
+}
+.rating-mini > span:before {
+	content: '★';
+}
+.rating-mini > span.active {
+	color:#83B3D3;
+}
+.rating-text{
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  width: 160px;
+  display: flex;
+  height:36px;
+  background-color: #F2F2F2;
+  color: #333333;
+}
   .button-big{
     background-color:#83B3D3;
     color:#ffffff
   }
+  .catalog-card{
+    display: flex;
+    width: 1056px;
+    height: 123px;
+    background-color: #FFFFFF;
+    color: #333333;
+  }
+  /*PAGINATION*/
+
+.pagination{
+  background-color: #FFFFFF;
+  color: #333333;
+}
+ .pagination-item{
+ background-color: #83B3D3;
+ color: #FFFFFF;
+ /*display:flex;*/
+}
+ .pagination{
+  display:inline;
+}
+ .pagination.pagination-item:first-child{
+  background-color: #F2F2F2;
+  color: #000000
+}
+
+  /*MAIL*/
   .mail{
     background-color:#ffffff;
     color:#333333
@@ -306,6 +375,7 @@ line-height: 26px;
     background-color:#F2F2F2;;
     color: #000000;
   }
+  /*FOOTER*/
 footer{
   background-color:#ffffff;
   color: #000000;
