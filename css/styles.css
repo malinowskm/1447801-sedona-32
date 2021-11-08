@@ -68,6 +68,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-style :normal;
   font-size: 18px;
+  font-weight: 400;
   text-align: center;
   color: #333333;
   background-color: #F2F2F2;
@@ -117,7 +118,7 @@ a {
 }
 
 button {
-  background-color:#756257;
+  background-color:#83B3D3;
   color: #FFFFFF;
   text-align: center;
   text-transform: uppercase;
@@ -270,7 +271,6 @@ text-align :Center;
   display:flex;
   align-items: center;
 }
-.filter
 .content-filter{
     position: relative;
     z-index: 2;
@@ -421,9 +421,10 @@ line-height: 26px;
  background-size: cover;
  Height:411px;
 }
-  input{
+.quantity-hotels{
     background-color:#F2F2F2;;
     color: #000000;
+    Width:287px;
   }
   /*FOOTER*/
 footer{
