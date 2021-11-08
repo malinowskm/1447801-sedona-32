@@ -123,6 +123,16 @@ button {
   text-align: center;
   text-transform: uppercase;
 }
+.dark-button{
+  background-color:#756257;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.green-standart-button{
+  background-color:#6C9E42;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
 link{
   padding: 24px 19px;
 }
@@ -421,7 +431,7 @@ line-height: 26px;
  background-size: cover;
  Height:411px;
 }
-.quantity-hotels{
+select .quantity-hotels{
     background-color:#F2F2F2;;
     color: #000000;
     Width:287px;
