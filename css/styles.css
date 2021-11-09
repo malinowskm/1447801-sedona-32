@@ -2,56 +2,15 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  src: url("fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  src: url("fonts/ptsans-400.woff2") format("woff2");
-  font-display: swap;
-}
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
-  src: url("fonts/ptsans-700.woff2") format("woff2");
-  font-display: swap;
-}
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  src: url("fonts/ptsans-700.woff2") format("woff2");
-  font-display: swap;
-}
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  src: url("fonts/ptsans-700.woff2") format("woff2");
-  font-display: swap;
-}
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  src: url("fonts/ptsans-700.woff2") format("woff2");
-  font-display: swap;
-}
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 60px;
-  src: url("fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 /*ELEMENTS*/
@@ -101,8 +60,12 @@ body .catalog {
   position: absolute;
   left:50%;
   transform:translateX(-50%);
+  background-color: #ffffff;
+  color: #333333;
+  width: 1200px;
+  margin:auto;
 }
-a {
+a .navigation-link{
   text-decoration: none;
   color: #000000;
 }
@@ -117,24 +80,37 @@ a {
   overflow: hidden;
 }
 
-button {
+.standart-primary-button{
+  text-decoration: none;
   background-color:#83B3D3;
   color: #FFFFFF;
   text-align: center;
   text-transform: uppercase;
 }
-.dark-button{
+.standart-primary-button{
+  text-decoration: none;
+  color:#000000;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.standart-secondary-button{
+  text-decoration: none;
+  text-transform: uppercase;
   background-color:#756257;
   color: #FFFFFF;
-  text-transform: uppercase;
+  font-size: 16px;
 }
-.green-standart-button{
-  background-color:#6C9E42;
+
+.standart-third-button{
+  text-decoration: none;
+    background-color:#6C9E42;
   color: #FFFFFF;
   text-transform: uppercase;
+  font-size: 16px;
 }
-link{
-  padding: 24px 19px;
+.standart-tertuary-button{
+  text-decoration: none;
+  font-size: 18px;
 }
 h1{
   font-family: "PT Sans", sans-serif;
@@ -143,11 +119,12 @@ h1{
   font-size: 60px;
   font-weight: 700;
 }
-h2 {
+h3 {
   text-transform:uppercase;
   color: #000000;
   font-size: 24px;
   font-weight: 700;
+  font-family: "PT Sans", sans-serif;
 }
 li {
   list-style-type: none;
@@ -155,6 +132,7 @@ li {
 /*HEADER*/
 header{
   display: flex;
+  font-family: "PT Sans", sans-serif;
   Width :1200px;
   Height:70px;
   background-color: #ffffff;
@@ -171,6 +149,9 @@ header{
 }
 .navigation-list{
   display: inline;
+}
+.image-logo{
+  margin:auto;
 }
 
 .banner-text{
@@ -198,6 +179,7 @@ header .navigation-list-left{
 /*MAIN PAGE FIRST SCREEN*/
 .first-sreen {
   position:relative;
+  font-family: "PT Sans", sans-serif;
   left:50%;
   transform:translateX(-50%);
   Width :1200px;
@@ -213,30 +195,33 @@ header .navigation-list-left{
 .real-town-block{
   display: flex;
   background-color: #83B3D3;
+  color:#FFFFFF;
   Width :1200px;
 
 }
 .devil-bridge{
   background-color: #83B3D3;
+  color:#FFFFFF;
   display: flex;
 }
 /*ADVANTAGES BLOCKS*/
 
-.advantages-123 {
-  flex-direction: row;
-  display: flex;
-  background-color: #F0F6FA;
-  justify-content: space-between;
-  color: #F0F6FA;
-  text-align: center;
+
+.advantages{
+  display:grid;
 }
-.advantages-345 {
-  flex-direction: row;
-  display: flex;
-   background-color: #F0F6FA;
-  justify-content: space-between;
-    color: #F0F6FA;
-  text-align: center;
+.advantages li{
+  display:flex;
+  Width :400px;
+  Height :384px;
+}
+.advantages li:first-child{
+   display:flex;
+   background-color: #68A2CA;
+   color:#FFFFFF;
+   Width:1200px;
+   Height:388px;
+
 }
 .advantages-apartment{
   background-color: #F0F6FA;
@@ -287,23 +272,17 @@ text-align :Center;
     color: #ffffff;
     overflow: hidden;
   }
-.bg-filter {
+.filter {
   background-image: url("../img/index-background.jpg");
   background-size: 100% auto;
   background-repeat:no-repeat;
   background-color:#40a1e2;
-  position:absolute;
-  top:0;
-  left:0;
+  color: #ffffff;
  background-size: cover;
-  filter: blur(5px);
-  z-index: 1;
   Width :100%;
   height:100%;
 }
-.content-filter{
-  color: #ffffff;
-}
+
 .hotels-search{
   background-color:#ffffff;
   Width :1200px;
@@ -411,7 +390,7 @@ line-height: 26px;
  .pagination{
   display:inline;
 }
- .pagination.pagination-item:first-child{
+ .pagination .pagination-item:first-child{
   background-color: #F2F2F2;
   color: #000000
 }

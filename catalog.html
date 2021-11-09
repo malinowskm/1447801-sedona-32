@@ -11,11 +11,11 @@
      </style>
   </head>
   <body class="catalog">
+    <div class="sheet">
     <header></header>
 
    <main class="main-inner">
     <section class="filter">
-      <div class="bg-filter"></div>
       <div class="content-filter"><h1>Гостиницы Седоны</h1>
       <p>Стоимость</p>
       <label>
@@ -36,8 +36,8 @@
           <label><input type="radio" name="housing" value="hotel"> Отель</label>
           <label><input type="radio" name="housing" value="apartments"> Апартаменты</label>
         </fieldset>
-        <button class="standart-link" type="submit"> Применить </button>
-        <button class="standart-link" type="reset"> Сбросить </button>
+        <button class="standart-primary-button" type="submit"> Применить </button>
+        <button class="standart-tertiary-button" type="reset"> Сбросить </button>
        <p>от 0 до 5000 </p>
          <span class="legend-filter"><legend >Стоимость</legend></span>
         <button class="range-toggle toggle-min" type="button">
@@ -75,8 +75,8 @@
       <li class="info-price">от 4000 $</li>
     </ul>
     <ul class="card-actions">
-      <li ><a href="#" class="dark-button">Подробнее</a></li>
-      <li ><button type="button" class="standart-button"> в Избранное</button></li>
+      <li ><a href="#" class="standart-secondary-button">Подробнее</a></li>
+      <li ><button type="button" class="standart-primary-button"> в Избранное</button></li>
     </ul>
     <div class="rating-mini">
       <span class="active"></span>
@@ -96,8 +96,8 @@
     <li class="info-price">от 4000 $</li>
   </ul>
   <ul class="card-actions">
-    <li ><a href="#" class="dark-button">Подробнее</a></li>
-    <li ><button type="button" class="standart-button">в Избранное</button></li>
+    <li ><a href="#" class="standart-secondary-button">Подробнее</a></li>
+    <li ><button type="button" class="standart-primary-button">в Избранное</button></li>
   </ul>
   <div class="rating-mini">
     <span class="active"></span>
@@ -116,8 +116,8 @@
     <li class="info-price">от 4000 $</li>
   </ul>
   <ul class="card-actions">
-    <li ><a href="#" class="dark-button">Подробнее</a></li>
-    <li ><button type="button" class="green-standart-button">в Избранном</button></li>
+    <li ><a href="#" class="standart-secondary-button">Подробнее</a></li>
+    <li ><button type="button" class="standart-third-button">в Избранном</button></li>
   </ul>
   <div class="rating-area">
     <div class="rating-mini">
@@ -139,8 +139,8 @@
     <li class="info-price">от 4000 $</li>
   </ul>
   <ul class="card-actions">
-    <li ><a href="#" class="dark-button">Подробнее</a></li>
-    <li ><button type="button" class="standart-button"> в Избранное</button></li>
+    <li ><a href="#" class="standart-secondary-button">Подробнее</a></li>
+    <li ><button type="button" class="standart-primary-button"> в Избранное</button></li>
   </ul>
   <div class="rating-area">
     <div class="rating-mini">
@@ -154,7 +154,7 @@
   </div>
   <span class="rating-text">Рейтинг: 8,5</span>
 </div>
-<button type="button-big" class="More">Загрузить еще</button>
+<button type="button-big" class="more">Загрузить еще</button>
 <ul class="pagination">
   <li class="pagination-item">
     <a class="pagination-link pagination-prev pagination-disabled">
@@ -191,6 +191,7 @@
   <option>15</option>
 </select>
    </main>
-  </body>
+  </div>
+</body>
 <footer>Скопирую</footer>
 </html>
