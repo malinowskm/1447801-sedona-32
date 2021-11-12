@@ -466,6 +466,7 @@ line-height: 26px;
     background-color: #FFFFFF;
     color: #333333;
     font-family: inherit;
+    margin:0 auto;
   }
   /*PAGINATION*/
   .pagination-amount{
