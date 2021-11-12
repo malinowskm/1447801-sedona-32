@@ -323,7 +323,12 @@ img .devil-bridge-image{
 text-align :center;
 }
 .hotels-search{
+  width: 1200px;
 min-height :411px;
+}
+.content-search{
+  margin: 0 auto;
+align-items: center;
 }
 /*CATALOG FILTER*/
 
@@ -531,6 +536,8 @@ line-height: 26px;
  Height:411px;
  width:1200px;
  font-family: inherit;
+ margin: 0 auto;
+ align-items: center;
 }
 select .quantity-hotels{
     background-color:#F2F2F2;;
@@ -545,6 +552,9 @@ footer.footer{
   font-family: inherit;
   min-height :120px;
   width:1200px;
+  padding: 42px;
+  margin: 0 auto;
+  align-items: center;
 }
 footer li{
   display:inline;
