@@ -80,14 +80,27 @@ main .main-container-index{
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-.standart-primary-button{
+.standart{
+  font-size: 16px;
+}
+.primary{
   font-family: inherit;
   text-decoration: none;
   background-color:#83B3D3;
   color: #FFFFFF;
   text-align: center;
   text-transform: uppercase;
+}
+.secondary{
+  font-family: inherit;
+  font-size: 16px;
+  text-decoration: none;
+  background-color:#756257;
+  color: #FFFFFF;
+  text-align: center;
+  text-transform: uppercase;
+  f
+}
 }
 .standart-primary-button{
   font-family: inherit;
