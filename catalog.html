@@ -10,22 +10,21 @@
       }
      </style>
   </head>
-  <body class="catalog">
-    <div class="sheet">
-    <header></header>
-
-   <main class="main-inner">
-    <section class="filter">
-      <h1 class="filter-heading">Гостиницы Седоны</h1>
+  <body class="inner-page">
+  <div class="sheet">
+  <header></header>
+  <main class="main-inner">
+   <section class="filter">
+    <h1 class="filter-heading">Гостиницы Седоны</h1>
         <p class="breadcrumbs">> Гостиницы</p>
         <form class="filter-value">
         <fieldset class="filter-infastructure">
-           <legend class="legend-filter">Инфрастуктура</legend>
+          <legend class="legend-filter">Инфрастуктура</legend>
           <ul>
           <li><label><input type="checkbox" name="pool" value="pool">Бассеин</label></li>
           <li><label><input type="checkbox" name="сolor-white" value="white">Парковка</label></li>
           <li><label><input type="checkbox" name="сolor-blue" value="blue">Wi-fi</label></li>
-        </ul>
+          </ul>
         </fieldset>
         <fieldset class="filter-housing">
           <span class="legend-filter"> <legend class="legend-filter">Тип жилья</legend></span>
@@ -33,11 +32,11 @@
           <label><input type="radio" name="housing" value="hotel"> Отель</label>
           <label><input type="radio" name="housing" value="apartments"> Апартаменты</label>
         </fieldset>
-      <fieldset class="filter-value">
-       <p>от 0 до 5000 </p>
-         <legend class="legend-filter">Стоимость</legend>
+        <fieldset class="filter-value">
+        <p>от 0 до 5000 </p>
+        <legend class="legend-filter">Стоимость</legend>
         <button class="range-toggle toggle-min" type="button">
-          <span class="visually-hidden">Изменить минимальную цену.</span>
+        Изменить минимальную цену.
         </button>
         <button class="range-toggle toggle-max" type="button">
           Изменить максимальную цену.</button>
@@ -72,7 +71,7 @@
     </ul>
   </section>
   <section class="catalog"><h2 class="visually-hidden">Карточки списка</h2>
-    <section class="catalog-card">
+  <section class="catalog-card">
     <img src="img/hotels/amara.jpg" alt="гостиница Amara Resort & Spa" width="180" height="120">
     <span class="product-name">Amara Resort & Spa</span>
     <ul class="info">
@@ -89,10 +88,9 @@
       <span class="active"></span>
       <span></span>
       <span></span>
-   </div>
-  </section>
+    </div>
     <span class="rating-text">Рейтинг: 8,5</span>
-</div>
+ </section>
 <div class="catalog-card">
   <img src="img/hotels/quail.jpg" alt="гостиница Desert Quail Inn" width="180" height="120">
   <span class="product-name">Desert Quail Inn</span>
@@ -132,7 +130,6 @@
       <span></span>
       <span></span>
     </div>
-
   </div>
   <span class="rating-text">Рейтинг: 8,5</span>
 </div>
@@ -147,7 +144,6 @@
     <li ><a href="#" class="standart secondary button">Подробнее</a></li>
     <li ><button type="button" class="standart primary button"> в Избранное</button></li>
   </ul>
-  <div class="rating-area">
     <div class="rating-mini">
       <span class="active"></span>
       <span class="active"></span>
@@ -155,11 +151,9 @@
       <span></span>
       <span></span>
     </div>
-
-  </div>
-  <span class="rating-text">Рейтинг: 8,5</span>
 </div>
-<button type="large primary button" class="more">Загрузить еще</button>
+  <span class="rating-text">Рейтинг: 8,5</span>
+<button type="button" class="large primary button">Загрузить еще</button>
 <div Class="pagination-amount">
 <ul class="pagination">
   <li class="pagination-item">
@@ -191,12 +185,14 @@
     </a>
   </li>
 </ul>
-<div class="amount-filter"><label> Гостиниц на странице:</label>
+</div>
+<div class="amount-filter">
+  <label> Гостиниц на странице:</label>
 <select id="amount-hotels" name="amount-hotels">
   <option>5</option>
   <option>10</option>
   <option>15</option>
-</select></div>
+</select>
 </div>
 </main>
   </div>

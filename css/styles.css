@@ -33,7 +33,7 @@ body {
   background-color: #F2F2F2;
   min-height: 100%;
 }
-body .catalog {
+body .inner-page{
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -80,6 +80,7 @@ main .main-container-index{
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/*BUTTONS*/
 .standart{
   font-size: 16px;
 }
@@ -407,6 +408,11 @@ line-height: 26px;
     background-color:#ffffff;
   color: #000000
   }
+  .catalog{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
   .catalog-view-сards{
     background-image: url("../img/svg/mode");
     background-size: 100% auto;
@@ -461,12 +467,14 @@ line-height: 26px;
   }
   .catalog-card{
     display: flex;
+    justify-content: space-between;
     width: 1056px;
     height: 123px;
     background-color: #FFFFFF;
     color: #333333;
     font-family: inherit;
     margin:0 auto;
+
   }
   /*PAGINATION*/
   .pagination-amount{
