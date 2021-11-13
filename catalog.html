@@ -28,10 +28,11 @@
         </fieldset>
         <fieldset class="filter-housing">
           <span class="legend-filter"> <legend class="legend-filter">Тип жилья</legend></span>
-          <label><input type="radio" name="housing"  value="hosting" checked> Гостиница</label>
-          <label><input type="radio" name="housing" value="hotel"> Отель</label>
-          <label><input type="radio" name="housing" value="apartments"> Апартаменты</label>
-        </fieldset>
+          <ul>
+          <li><label><input type="radio" name="housing"  value="hosting" checked> Гостиница</label></li>
+          <li><label><input type="radio" name="housing" value="hotel"> Отель</label></li>
+          <li><label><input type="radio" name="housing" value="apartments"> Апартаменты</label></li>
+        </ul></fieldset>
         <fieldset class="filter-value">
         <p>от 0 до 5000 </p>
         <legend class="legend-filter">Стоимость</legend>
@@ -51,20 +52,20 @@
       </label>
     </fieldset>
       <fieldset class="filter-buttons">
-        <button class="standart-primary-button" type="submit"> Применить </button>
-        <button class="standart-tertiary-button" type="reset"> Сбросить </button>
+        <button class="standart primary button" type="submit"> Применить </button>
+        <button class="standart tertiary button" type="reset"> Сбросить </button>
       </fieldset></form></section>
     <section class="housing-filter">
-      <div class="content-housing-list-filter"><h2 class="visually-hidden">Заголовок и фильтр</h2>
+      <h2 class="visually-hidden">Заголовок и фильтр</h2>
     <h2>Найдено гостиниц:</h2>
     <select id="quantity-hotels" name="quantity-hotels" class="quantity-hotels">
       <option>Сначала дешевые</option>
       <option>Сначала дорогие</option>
       <option>По рейтингу</option>
     </select>
-      </div>
+
     </section>
-    <ul>
+    <ul class="catalog-view">
       <li><button class="catalog-view-сards"></button></li>
       <li><button class="catalog-view-big"></button></li>
       <li><button class="catalog-view-little"></button></li>
@@ -153,6 +154,7 @@
     </div>
 </div>
   <span class="rating-text">Рейтинг: 8,5</span>
+</section>
 <button type="button" class="large primary button">Загрузить еще</button>
 <div Class="pagination-amount">
 <ul class="pagination">
