@@ -15,8 +15,10 @@
   <header></header>
   <main class="main-inner">
    <section class="filter">
-    <h1 class="filter-heading">Гостиницы Седоны</h1>
+    <div class="filter-heading-block">
+      <h1 class="filter-heading">Гостиницы Седоны</h1>
         <p class="breadcrumbs">> Гостиницы</p>
+    </div>
         <form class="filter-value">
         <fieldset class="filter-infastructure">
           <legend class="legend-filter">Инфрастуктура</legend>
@@ -46,9 +48,9 @@
         1 <input type="range" min="0" max="100" step="1" value="100">
         100</label>
           <label class="catalog-filter-label">
-          от <input class="catalog-filter-input" type="number" name="min-price">
+          от <input class="catalog-filter-input" type="number" name="min-price" placeholder="0">
         </label>
-      <label>до<input class="catalog-filter-input" type="number" name="max-price">
+      <label>до<input class="catalog-filter-input" type="number" name="max-price"  placeholder="9000">
       </label>
     </fieldset>
       <fieldset class="filter-buttons">
@@ -57,32 +59,33 @@
       </fieldset></form></section>
     <section class="housing-filter">
       <h2 class="visually-hidden">Заголовок и фильтр</h2>
-    <h2>Найдено гостиниц:</h2>
+    <div class="found-housing"><h2>Найдено гостиниц:38</h2>
     <select id="quantity-hotels" name="quantity-hotels" class="quantity-hotels">
       <option>Сначала дешевые</option>
       <option>Сначала дорогие</option>
       <option>По рейтингу</option>
-    </select>
-
-    </section>
-    <ul class="catalog-view">
+    </select></div>
+<ul class="catalog-view">
       <li><button class="catalog-view-сards"></button></li>
       <li><button class="catalog-view-big"></button></li>
       <li><button class="catalog-view-little"></button></li>
     </ul>
-  </section>
+    </section>
   <section class="catalog"><h2 class="visually-hidden">Карточки списка</h2>
   <section class="catalog-card">
     <img src="img/hotels/amara.jpg" alt="гостиница Amara Resort & Spa" width="180" height="120">
-    <span class="product-name">Amara Resort & Spa</span>
+    <div class="card-content">
+      <div class="name-info">
+        <span class="product-name">Amara Resort & Spa</span>
     <ul class="info">
       <li class="info-hotel">Гостиница</li>
       <li class="info-price">от 4000 $</li>
-    </ul>
+    </ul></div>
     <ul class="card-actions">
       <li ><a href="#" class="standart secondary button">Подробнее</a></li>
       <li ><button type="button" class="standart primary button"> в Избранное</button></li>
     </ul>
+  </div>
     <div class="rating-mini">
       <span class="active"></span>
       <span class="active"></span>
@@ -94,15 +97,17 @@
  </section>
 <div class="catalog-card">
   <img src="img/hotels/quail.jpg" alt="гостиница Desert Quail Inn" width="180" height="120">
-  <span class="product-name">Desert Quail Inn</span>
+  <div class="card-content">
+    <div class="name-info">
+      <span class="product-name">Desert Quail Inn</span>
   <ul class="info">
     <li class="info-hotel">Мотель</li>
     <li class="info-price">от 4000 $</li>
-  </ul>
+  </ul></div>
   <ul class="card-actions">
     <li ><a href="#" class="standart secondary button">Подробнее</a></li>
     <li ><button type="button" class="standart primary button">в Избранное</button></li>
-  </ul>
+  </ul></div>
   <div class="rating-mini">
     <span class="active"></span>
     <span class="active"></span>
@@ -114,15 +119,17 @@
 </div>
 <div class="catalog-card">
   <img src="img/hotels/villas.jpg" alt="гостиница Villas at Poco Diablo" width="180" height="120">
+  <div class="card-content">
+    <div class="name-info">
   <span class="product-name">Villas at Poco Diablo</span>
   <ul class="info">
     <li class="info-hotel">Гостиница</li>
     <li class="info-price">от 4000 $</li>
-  </ul>
+  </ul></div>
   <ul class="card-actions">
     <li ><a href="#" class="standart secondary button">Подробнее</a></li>
     <li ><button type="button" class="standart third button">в Избранном</button></li>
-  </ul>
+  </ul></div>
   <div class="rating-area">
     <div class="rating-mini">
       <span class="active"></span>
@@ -135,16 +142,18 @@
   <span class="rating-text">Рейтинг: 8,5</span>
 </div>
 <div class="catalog-card">
-  <img src="#" alt="гостиница GreenTree" width="180" height="120">
+  <div class="card-content">
+    <div class="name&info">
+  <img src="img/hotels/greentree.jpg" alt="гостиница GreenTree" width="180" height="120">
   <span class="product-name">GreenTree Inn</span>
   <ul class="info">
     <li class="info-hotel">Гостиница</li>
     <li class="info-price">от 4000 $</li>
-  </ul>
+  </ul></div>
   <ul class="card-actions">
     <li ><a href="#" class="standart secondary button">Подробнее</a></li>
     <li ><button type="button" class="standart primary button"> в Избранное</button></li>
-  </ul>
+  </ul></div>
     <div class="rating-mini">
       <span class="active"></span>
       <span class="active"></span>
@@ -156,12 +165,9 @@
   <span class="rating-text">Рейтинг: 8,5</span>
 </section>
 <button type="button" class="large primary button">Загрузить еще</button>
-<div Class="pagination-amount">
+<div сlass="pagination-amount">
 <ul class="pagination">
   <li class="pagination-item">
-    <a class="pagination-link pagination-prev pagination-disabled">
-      <span class="visually-hidden">Предыдущая страница</span>
-    </a>
   </li>
   <li class="pagination-item">
     <a class="pagination-link pagination-current">1</a>
@@ -181,10 +187,6 @@
   <li class="pagination-item">
     <a class="pagination-link" href="#">10</a>
   </li>
-  <li class="pagination-item">
-    <a class="pagination-link pagination-next" href="#">
-      <span class="visually-hidden">Следующая страница</span>
-    </a>
   </li>
 </ul>
 </div>
