@@ -85,48 +85,49 @@ main .main-container-index {
 }
 /*MODAL*/
 .modal-container {
-  position: fixed;
-  top: 400;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  width: 715;
-  height: 100%;
-  background-color: rgba(242, 242, 242, 0.8);
-padding: 70px 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(242, 242, 242, 0.8);
+  }
 }
 /*.modal-container-close{
 none;
 }*/
 
-.modal-container ul{
-list-style-type: none;
-padding:0px;
+.form-list{
 display: flex;
 flex-direction: column;
+list-style-type: none;
 margin: 0px auto ;
 align-items: flex-start;
+padding:0px;
 }
 .search-form-text,.search-form-adult{
   width: 155;
   text-align: start;
 }
-.modal-container legend{
+.search-form legend{
   font-family: inherit;
   font-size: 18px;
   font-weight: 700;
 }
 .modal {
   position: relative;
-  margin: auto auto;
+  margin: auto;
+  padding:60px 72px;
   background-color: #FFFFFF;
   width: 715px;
+
 }
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 0;
-  right: 0;
+  top: 54px;
+  right: 54px;
   width: 56px;
   height: 44px;
   background-color: #ffffff;
@@ -161,10 +162,36 @@ align-items: flex-start;
 }
 .form-line{
   display: flex;
-  /*margin:70px 40px;*/
   align-items: baseline;
-  /*Width:420px;*/
+  list-style-type: none;
+  margin: 0px;
+  list-style-position: inside;
 }
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+.modal-input-number {
+  background-color: #F2F2F2;
+  color: #000000;
+  width: auto;
+  border:0px;
+  padding: 5px 0px;
+  text-align: center;
+}
+.input-number-line{
+  display:flex;
+  justify-content: flex-start;
+}
+}
+.input-number-line svg{
+  border:0px;
+}
+
+
 .modal-search.button{
   min-width: 420px;
   text-align: center;
@@ -571,7 +598,7 @@ img.devil-bridge-image {
   border: 0px;
 }
 
-input[type="number"] {
+input[type="number"].catalog-filter-input{
   font-family: inherit;
   font-size: 18px;
   padding: 12px;
@@ -581,6 +608,7 @@ input[type="number"] {
   border-radius: 4px;
   outline: none;
 }
+
 .breadcrumbs {
   grid-column-start: 1;
   grid-column-end: 4;

@@ -267,22 +267,31 @@
     </footer>
     <div class="modal-container modal-container-close">
       <div class="modal modal-search">
-        <button class="modal-close-button">
+        <button class="modal-close-button"><svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="26.5" cy="26.5" r="26.5" fill="#F2F2F2"/>
+          <path d="M33 21.2L31.8 20L26.5 25.3L21.2 20L20 21.2L25.3 26.5L20 31.8L21.2 33L26.5 27.7L31.8 33L33 31.8L27.7 26.5L33 21.2Z" fill="black"/>
+          </svg>
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="search-form">
-            <ul>
+            <ul class="form-list">
             <li><div class="form-line"><legend class="search-form-text">Дата заезда:</legend>
             <input type="text" id="search-form" name="check-in" class="modal-input-text" placeholder="01.01.2022">
-            <div class="date-icon"><svg width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g opacity=".3" fill="#000"><path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5z"/>
+            <div class="date-icon"><svg width="15" height="15" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g opacity=".3" fill="#000"><path d="M5.5 10c.3 0 .5-.2.5-.5S5.8
+                9 5.5 9s-.5.2-.5.5.2.5.5.5z"/>
                 <path d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5
                 0 1-.5 1-1V3c0-.6-.5-1-1-1zm0 12H1V7h13v7zM1 6V3h2v2h1V3h7v2h1V3h2v3H1z"/>
                 <path d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5zM9.5 10c.3 0
-                 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5zM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5zM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5zM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5zM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5zM9.5 11c-.3
-                  0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5zM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5zM11.5
+                 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5zM5.5 11c-.3
+                 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5zM3.5 10c.3 0 .5-.2.5-.5S3.8 9
+                 3.5 9s-.5.2-.5.5.2.5.5.5zM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5zM7.5
+                 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5zM9.5 11c-.3
+                  0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5zM11.5 10c.3 0
+                  .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5zM11.5
                11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5z"/></g></svg>
               </div></div></li>
                <li><div class="form-line"><legend class="search-form-text">Дата выезда:</legend>
@@ -296,8 +305,24 @@
                   0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5zM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5zM11.5
                11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5z"/></g></svg></div>
               </div></li>
-              <li><div class="form-line"><legend class="search-form-adult">Взрослые</legend>
-            <input type="number" id="search-form" class="modal-input-number" name="adult" placeholder="1">
+              <li>
+                <div class="form-line">
+                <legend class="search-form-adult">Взрослые</legend>
+            <div class="input-number-line adult">
+              <button class="arrow-minus"><svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                </svg>
+                </button>
+              <input type="number" id="search-form" class="modal-input-number" name="adult" placeholder="1">
+              <div class="input-number-line child">
+                <button class="arrow-plus"><svg width="13" height="13"
+                  viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.3">
+                  <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
+                  </g>
+                  </svg>
+                  </button>
+              </div>
             <legend class="search-form-child">Дети</legend>
             <div class="tooltip"><svg  width="25" height="25" fill="none"
             xmlns="http://www.w3.org/2000/svg"><circle cx="12.5" cy="12.5" r="12.5" fill="#83B3D3"/>
@@ -308,7 +333,22 @@
               <span class="tooltiptext">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
                  Дети до 6 лет размещаются бесплатно.</span>
                 </div>
-              <input type="number" id="search-form" name="child" class="modal-input-number" placeholder="0">
+                <div class="input-number">
+                  <button class="arrow-minus"><svg width="13" height="1"
+                    viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                    </svg>
+                    </button>
+                  <input type="number" id="search-form" name="child"
+                   class="modal-input-number" placeholder="0">
+                   <button class="arrow-plus"><svg width="13" height="13"
+                     viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g opacity="0.3">
+                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
+                    </g>
+                    </svg>
+                    </button>
+                  </div>
             </div></li>
             </ul>
             <button class="modal-search primary button" type="button">Найти</button>
