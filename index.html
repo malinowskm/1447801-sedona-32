@@ -283,8 +283,8 @@
                 <path d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5zM9.5 10c.3 0
                  .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5zM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5zM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5zM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5zM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5zM9.5 11c-.3
                   0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5zM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5zM11.5
-               11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5z"/></g></svg></div>
-              </div></li>
+               11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5z"/></g></svg>
+              </div></div></li>
                <li><div class="form-line"><legend class="search-form-text">Дата выезда:</legend>
             <input type="text" id="search-form" name="check-out" class="modal-input-text" placeholder="01.01.2022">
             <div class="date-icon"><svg width="15" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -299,11 +299,15 @@
               <li><div class="form-line"><legend class="search-form-adult">Взрослые</legend>
             <input type="number" id="search-form" class="modal-input-number" name="adult" placeholder="1">
             <legend class="search-form-child">Дети</legend>
-            <svg  width="25" height="25" fill="none"
+            <div class="tooltip"><svg  width="25" height="25" fill="none"
             xmlns="http://www.w3.org/2000/svg"><circle cx="12.5" cy="12.5" r="12.5" fill="#83B3D3"/>
             <g clip-path="url(#a)" fill="#fff"><path d="M12 17h1v-6h-1v6zM13 8h-1v1h1V8z"/></g>
             <defs><clipPath id="a">
-              <path fill="#fff" transform="translate(12 8)" d="M0 0h1v9H0z"/></clipPath></defs></svg></>
+              <path fill="#fff" transform="translate(12 8)"
+              d="M0 0h1v9H0z"/></clipPath></defs></svg>
+              <span class="tooltiptext">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет.
+                 Дети до 6 лет размещаются бесплатно.</span>
+                </div>
               <input type="number" id="search-form" name="child" class="modal-input-number" placeholder="0">
             </div></li>
             </ul>

@@ -67,23 +67,45 @@ main .main-container-index {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.tooltip{
+  position: relative;
+  display: inline-block;
+}
+.tooltiptext{
+  visibility: hidden;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 18px 20px;
+  border-radius: 10px;
+  text-align: center;
+  Width:256px;
+  position: absolute;
+    z-index: 1;
+    top: -5px;
+}
 /*MODAL*/
 .modal-container {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 400;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  width: 100%;
+  width: 715;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
-
+padding: 70px 70px;
 }
 /*.modal-container-close{
 none;
 }*/
+
 .modal-container ul{
 list-style-type: none;
 padding:0px;
+display: flex;
+flex-direction: column;
+margin: 0px auto ;
+align-items: flex-start;
 }
 .search-form-text,.search-form-adult{
   width: 155;
@@ -96,8 +118,7 @@ padding:0px;
 }
 .modal {
   position: relative;
-  margin: auto;
-  padding: 70px;
+  margin: auto auto;
   background-color: #FFFFFF;
   width: 715px;
 }
@@ -140,13 +161,15 @@ padding:0px;
 }
 .form-line{
   display: flex;
-  margin:70px 40px;
+  /*margin:70px 40px;*/
   align-items: baseline;
+  /*Width:420px;*/
 }
 .modal-search.button{
   min-width: 420px;
   text-align: center;
   padding: 10px 0px;
+  border-radius: 10px;
 }
 .date-icon{
   padding: 12px;
