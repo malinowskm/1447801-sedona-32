@@ -94,9 +94,10 @@ main .main-container-index {
     background-color: rgba(242, 242, 242, 0.8);
   }
 }
-/*.modal-container-close{
-none;
-}*/
+
+.modal-container-close{
+display:none;
+}
 
 .form-list{
 display: flex;
@@ -137,6 +138,13 @@ padding:0px;
   background-position: center;
   cursor: pointer;
 }
+.modal-close-button:focus{
+  border:3px #83B3D3 solid;
+}
+.modal-close-button:hover{
+  background-color: #E5E5E5;
+}
+
 .search-form-text{
   width: ;
 }
@@ -215,6 +223,12 @@ input[type=number]::-webkit-outer-spin-button {
   text-transform: uppercase;
   border: 0;
 }
+.primary:hover{
+  background-color: #68A2CA;
+}
+.primary:focus{
+  border:3px #83B3D3 solid;
+}
 .secondary {
   display: block;
   font-family: inherit;
@@ -225,6 +239,12 @@ input[type=number]::-webkit-outer-spin-button {
   text-align: center;
   text-transform: uppercase;
   border: 0;
+}
+.secondary:hover{
+  background-color: #615048;
+}
+.secondary:focus{
+  border:3px 756257 solid;
 }
 .tertiary {
   background-color: transparent;
@@ -304,7 +324,11 @@ h3 {
   text-decoration: none;
   color: #000000;
   text-transform: uppercase;
-  margin: 0px 15px;
+  margin: 6px 15px;
+}
+.navigation-link:hover{
+  color: #756257;
+
 }
 li.navigation-item {
   display: inline;
@@ -975,4 +999,25 @@ footer .phone {
   background-image: url(../img/svg/social-twitter.svg);
   background-repeat: no-repeat;
   background-position: center;
+}
+.icon-facebook,.icon-youtube,.icon-twitter:focus{
+  border:3px #83B3D3 solid;
+}
+.icon-facebook,.icon-youtube,.icon-twitter:hover{
+  color:#68A2CA;
+}
+.phone:hover{
+  color: #756257;
+}
+.phone:focus{
+  border: 3px #83B3D3 solid;
+  border-radius: 10px;
+}
+.img-link:hover{
+  color:#756257;
+}
+.img-link:focus{
+  color:#756257;
+  border: 3px #83B3D3 solid;
+  border-radius: 10px;
 }
