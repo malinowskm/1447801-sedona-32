@@ -102,9 +102,9 @@ main .main-container-index {
     box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
 border-radius: 30px;
   }
-/*.modal-container-close{
+.modal-container-close{
 display:none;
-}*/
+}
 
 .form-list{
 display: grid;
@@ -425,12 +425,14 @@ h3 {
   min-width: 26px;
   text-decoration: none;
   color: #000000;
-  text-transform: uppercase;
   margin: 6px 15px;
 }
 .navigation-link:hover{
   color: #756257;
 
+}
+.navigation-link:visited{
+  color:#000000;
 }
 li.navigation-item {
   display: inline;
@@ -448,6 +450,22 @@ li.navigation-item {
   display: inline;
   text-align: center;
 }
+.navigation-item-left favorite{
+  position: relative;
+}
+.fav{
+  position:absolute;
+  top:0px;
+  right:180px;
+  display: block;
+  background-color: #7DB54F;
+  border-radius: 100px;
+  color: #000000;
+  font-family: inherit;
+  font-size: 10px;
+  line-height: 10px;
+  padding: 4px 0px;
+}
 .navigation-search {
   display: block;
   /*background-image: url("../img/svg/search.svg");*/
@@ -462,6 +480,7 @@ li.navigation-item {
   font-size: 30px;
   font-weight: 700;
   font-style: normal;
+  max-width: 720px;
 }
 .first-screen-text {
   font-size: 22px;
@@ -527,6 +546,7 @@ header .navigation-list-left {
   padding: 0;
   font-size: 16px;
   font-weight: 400;
+  text-decoration: none;
 }
 .cart-item-text{
   display: flex;
@@ -553,7 +573,7 @@ header .navigation-list-left {
   transform: translateX(-50%);
   width: 1200px;
   height: 485px;
-  background-image: url("../img/index-background.jpg");
+  background-image: url("../img/index-background.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #ffffff;
@@ -937,10 +957,17 @@ input[type="number"].catalog-filter-input{
   justify-content: space-between;
   min-height: 135px;
 }
+.card-content a{
+  text-decoration: none;
+}
 .name-info {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+.name-info:visited{
+  color:#000000;
 }
 .name-info:hover{
   color:#858585;
@@ -952,7 +979,6 @@ input[type="number"].catalog-filter-input{
 .name-info:active{
 color: #D6D0CC;
 }
-D6D0CC
 .info {
   display: flex;
   justify-content: space-between;
@@ -984,7 +1010,6 @@ D6D0CC
   display: flex;
   flex-direction: row;
   height: 55px;
-  /*width: 1200px;*/
   align-items: center;
   margin: 60px 72px 90px 72px;
   justify-content: space-between;
