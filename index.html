@@ -419,10 +419,8 @@
           <section class="modal-content">
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
             <form class="search-form">
-              <ul class="form-list">
-                <li>
                   <div class="form-line">
-                    <legend class="search-form-text">Дата заезда:</legend>
+                    <label class="search-form-text">Дата заезда:</label>
                     <input
                       type="text"
                       id="search-form"
@@ -460,10 +458,8 @@
                       </svg>
                     </div>
                   </div>
-                </li>
-                <li>
                   <div class="form-line">
-                    <legend class="search-form-text">Дата выезда:</legend>
+                    <label class="search-form-text">Дата выезда:</label>
                     <input
                       type="text"
                       id="search-form"
@@ -497,9 +493,9 @@
                     </div>
                   </div>
                 </li>
-                <li>
                   <div class="form-line">
-                    <legend class="search-form-adult">Взрослые</legend>
+                    <div class="input-number-line adult">
+                    <label class="search-form-adult">Взрослые</label>
                     <div class="input-number adult">
                       <button class="arrow-minus">
                         <svg
@@ -541,9 +537,10 @@
                             </g>
                           </svg>
                         </button>
-                      </div>
-                      <div class="form-child"><legend class="search-form-child">Дети</legend>
-                      <div class="tooltip">
+                      </div></div>
+                      <div class="input-number-line child">
+                        <label class="search-form-child">Дети</label>
+                      <div class="tooltip"><a href="#">
                         <svg
                           width="25"
                           height="25"
@@ -569,7 +566,7 @@
                           возраст которых от 6 до 18 лет. Дети до 6 лет
                           размещаются бесплатно.</span
                         >
-                      </div>
+                      </a></div>
                       <div class="input-number child">
                         <button class="arrow-minus">
                           <svg
@@ -613,11 +610,9 @@
                       </div>
                       </div>
                     </div>
-                </li>
-                <li><button class="modal-search primary button" type="button">
+                    <button class="modal-search primary button" type="button">
                   Найти
-                </button></li>
-              </ul>
+                </button>
             </form>
           </section>
         </div>

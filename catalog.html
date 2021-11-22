@@ -142,24 +142,25 @@
             <fieldset class="filter-value">
               <p>от 0 до 5000</p>
               <legend class="legend-filter">Стоимость</legend>
-              <label class="catalog-filter-label">
-                от
-                <input
+              <div class="price-filter"><label class="value-filter-label-ot">
+                от</label>
+                <div class="filter-value-input"><input
                   class="catalog-filter-input"
                   type="number"
+                  min="0" max="500000"
                   name="min-price"
                   placeholder="0"
                 />
-              </label>
-              <label
-                >до<input
-                  class="catalog-filter-input"
+              <input
+                 class="catalog-filter-input"
                   type="number"
+                  min="0" max="500500000"
                   name="max-price"
                   placeholder="9000"
-                />
-              </label>
-              <p>Стоимость</p>
+                /></div>
+                <label class="value-filter-label-after"
+                >до
+              </label></div>
               <label>
                 1
                 <input type="range" min="0" max="100" step="1" value="100" />
@@ -231,7 +232,7 @@
               </div>
             </li>
             <li>
-              <div class="catalog-card">
+              <div class="catalog-card"><a href="#">
                 <img
                   src="img/hotels/quail.jpg"
                   alt="гостиница Desert Quail Inn"
@@ -262,10 +263,10 @@
                   </div>
                   <span class="rating-text">Рейтинг: 8,5</span>
                 </div>
-              </div>
+              </a></div>
             </li>
             <li>
-              <div class="catalog-card">
+              <div class="catalog-card"><a href="#">
                 <img
                   src="img/hotels/villas.jpg"
                   alt="гостиница Villas at Poco Diablo"
@@ -296,9 +297,9 @@
 
                   <span class="rating-text">Рейтинг: 8,5</span>
                 </div>
-              </div>
+              </a></div>
             </li>
-            <li>
+            <li><a href="#">
               <div class="catalog-card">
                 <img
                   src="img/hotels/greentree.jpg"
@@ -329,7 +330,7 @@
                   </div>
                   <span class="rating-text">Рейтинг: 8,5</span>
                 </div>
-              </div>
+              </a></div>
             </li>
           </ul>
         </section>
