@@ -18,7 +18,7 @@
               <a class="navigation-link" href="catalog.html">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="faq.html">Гостиницы</a>
+              <a class="navigation-link linkactive" href="faq.html">Гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -82,32 +82,40 @@
                       type="checkbox"
                       name="pool"
                       value="pool"
-                    />Бассеин</label
+                      class="filter-checkbox"
+                    />
+                    <span class="checkbox-fake"></span>
+                    <span class="label-housing">Бассеин</span></label
                   >
                 </li>
                 <li>
                   <label
                     ><input
                       type="checkbox"
-                      name="сolor-white"
-                      value="white"
-                    />Парковка</label
+                      name="inf-parking"
+                      value="parking"
+                      class="filter-checkbox"
+                    /><span class="checkbox-fake"></span>
+                    <span class="label-housing">Парковка</span></label
                   >
                 </li>
                 <li>
                   <label
                     ><input
                       type="checkbox"
-                      name="сolor-blue"
-                      value="blue"
-                    />Wi-fi</label
+                      class="filter-checkbox"
+                      name="inf-wifi"
+                      value="wifi"
+                    /><span class="checkbox-fake"></span>
+                    <span class="label-housing"> Wi-fi</span></label
                   >
                 </li>
               </ul>
             </fieldset>
             <fieldset class="filter-housing">
               <span class="legend-filter">
-                <legend class="legend-filter">Тип жилья</legend></span
+                <legend class="legend-filter">
+                  Тип жилья</legend></span
               >
               <ul>
                 <li>
@@ -116,27 +124,34 @@
                       type="radio"
                       name="housing"
                       value="hosting"
+                      class="filter-radio"
                       checked
-                    />
-                    Гостиница</label
+                    /><span class="radio-fake"></span>
+                    <span class="label-housing">Гостиница</span></label
                   >
                 </li>
                 <li>
                   <label
-                    ><input type="radio" name="housing" value="hotel" />
-                    Отель</label
+                    ><input type="radio"
+                    name="housing"
+                    value="hotel"
+                    class="filter-radio"/>
+                    <span class="radio-fake"></span> <span class="label-housing">Отель</span></label
                   >
                 </li>
                 <li>
                   <label
-                    ><input type="radio" name="housing" value="apartments" />
-                    Апартаменты</label
+                    ><input type="radio"
+                     name="housing"
+                     value="apartments"
+                     class="filter-radio" />
+                    <span class="radio-fake"></span>
+                    <span class="label-housing">Апартаменты</span></label
                   >
                 </li>
               </ul>
             </fieldset>
             <fieldset class="filter-value">
-              <p>от 0 до 5000</p>
               <label class="legend-filter">Стоимость</label>
               <div class="price-filter"><label class="value-filter-label-ot">
                 от</label>
@@ -204,7 +219,7 @@
                 />
                 <div class="card-content">
                   <div class="name-info">
-                    <span class="product-name">Amara Resort & Spa</span>
+                    <a><span class="product-name">Amara Resort & Spa</span></a>
                     <ul class="info">
                       <li class="info-hotel">Гостиница</li>
                       <li class="info-price">от 4000 $</li>
@@ -237,7 +252,7 @@
                 />
                 <div class="card-content">
                   <div class="name-info">
-                    <span class="product-name">Desert Quail Inn</span>
+                    <a><span class="product-name">Desert Quail Inn</span></a>
                     <div class="info">
                       <span class="info-hotel">Мотель</span>
                       <span class="info-price">от 4000 $</span>
@@ -271,7 +286,7 @@
                 />
                 <div class="card-content">
                   <div class="name-info">
-                    <span class="product-name">Villas at Poco Diablo</span>
+                    <a><span class="product-name">Villas at Poco Diablo</span></a>
                     <div class="info">
                       <span class="info-hotel">Гостиница</span>
                       <span class="info-price">от 4000 $</span>
@@ -305,7 +320,7 @@
                 />
                 <div class="card-content">
                   <div class="name-info">
-                    <span class="product-name">GreenTree Inn</span>
+                    <a><span class="product-name">GreenTree Inn</span></a>
                     <div class="info">
                       <span class="info-hotel">Гостиница</span>
                       <span class="info-price">от 4000 $</span>
@@ -334,9 +349,8 @@
 
         <div class="pagination-amount">
           <ul class="pagination">
-            <li class="pagination-item"></li>
             <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
+              <a class="pagination-link pagination-current isActive">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">2</a>
