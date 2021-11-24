@@ -64,8 +64,8 @@
       </header>
       <main class="main-inner">
         <section class="filter">
-          <div class="filter-heading-block">
-            <h1 class="filter-heading">Гостиницы Седоны</h1>
+          <div class="filter-heading">
+            <h1 class="heading">Гостиницы Седоны</h1>
             <p class="breadcrumbs"><a href="#"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M6 0.300049L0 5.80005V12H12V5.80005L6 0.300049ZM11 11H1V6.20005L6 1.70005L11 6.20005V11Z" fill="white"/>
               <path d="M4 10H5V7.5H7V10H8V6.5H4V10Z" fill="white"/>
@@ -113,10 +113,9 @@
               </ul>
             </fieldset>
             <fieldset class="filter-housing">
-              <span class="legend-filter">
+
                 <legend class="legend-filter">
-                  Тип жилья</legend></span
-              >
+                  Тип жилья</legend>
               <ul>
                 <li>
                   <label
@@ -158,21 +157,21 @@
                 <div class="filter-value-input"><input
                   class="catalog-filter-input"
                   type="number"
-                  min="0" max="500000"
+                  min="0" max="90009999999"
                   name="min-price"
                   placeholder="0"
                 />
               <input
                  class="catalog-filter-input"
                   type="number"
-                  min="0" max="500500000"
+                  min="0" max="90009999999"
                   name="max-price"
                   placeholder="9000"
                 /></div>
                 <label class="value-filter-label-after"
                 >до
               </label></div>
-              <label>
+              <label class="filter-slaider">
                 1
                 <input type="range" min="0" max="100" step="1" value="100" />
                 100</label
@@ -190,7 +189,7 @@
         </section>
         <section class="housing-filter">
           <h2 class="visually-hidden">Заголовок и фильтр</h2>
-          <h2>Найдено гостиниц:38</h2>
+          <h2 class="banner-text">Найдено гостиниц:38</h2>
           <select
             id="quantity-hotels"
             name="quantity-hotels"
