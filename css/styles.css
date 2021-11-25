@@ -475,11 +475,36 @@ border:3px #F2F2F2 solid
 
 .third {
 background-color: #7DB54F;
-border: 3px;
+border: 3px #7DB54F solid;
 border-color: transparent;
 text-transform: uppercase;
 color: #FFFFFF;
+border-radius: 4px;
 }
+
+.third:visited{
+  background-color: #7DB54F;
+border: 3px #7DB54F solid;
+border-color: transparent;
+text-transform: uppercase;
+color: #FFFFFF;
+border-radius: 4px;
+}
+
+.third:hover{
+  background-color: #6C9E42;
+  border: 3px #7DB54F solid;
+  border-radius: 4px;
+}
+
+
+.third:focus{
+  background-color: #8a9185;
+  border: 3px solid #756257;
+border-radius: 4px;
+}
+
+
 
 .standart {
   font-family: inherit;
