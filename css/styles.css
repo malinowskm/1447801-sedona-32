@@ -704,7 +704,7 @@ header .navigation-list-left {
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
   border-radius: 20px;
-  display: none;
+  /*display: none;*/
 }
 .popover-close-button {
   padding: 20px ;
@@ -770,7 +770,19 @@ opacity: 0,6;
 }
 
 .cart-item-button{
-  border:0px;
+ display: block;
+ border: 2px #ffffff solid;
+ background-color: #ffffff;
+}
+
+.cart-item-button{
+  display: block;
+  border: 2px #ffffff solid;
+  background-color: #ffffff;
+ }
+
+.cart-item-button .svg:hover {
+  fill: #000000;
 }
 
 /*MAIN PAGE FIRST SCREEN*/
@@ -1623,9 +1635,14 @@ ul.pagination{
 
 .pagination-link {
   background-color: #83B3D3;
+  border: 2px #83B3D3 solid;
+  border-radius: 4px;
   color: #ffffff;
   display: block;
-  padding: 16px 16px;
+  width: 52px;
+  height: 52px;
+  padding:14px 16px;
+  text-align: center;
   text-decoration: none;
   color: #333333;
   margin-right: 8px;
@@ -1635,9 +1652,22 @@ ul.pagination{
   font-family: inherit;
 }
 
+.pagination-link:hover{
+  background-color: #68A2CA;
+  border: 2px #756257 solid;
+  border-radius: 4px;
+}
+
+.pagination-link:active{
+  background-color: #68A2CA;
+  opacity: 0,3;
+}
+
 .isActive {
   background-color: #F2F2F2;
   color: #000000;
+  border: 2px #F2F2F2 solid;
+  border-radius: 4px;
 }
 
 .quantity-hotels {
@@ -1722,6 +1752,7 @@ input[type="email"] {
   border-radius: 10px 0 0 10px;
   width: 600px;
 }
+
 
 .mail button {
   padding: 11px 27px;
