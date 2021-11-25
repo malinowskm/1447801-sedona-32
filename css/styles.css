@@ -506,7 +506,7 @@ color: #FFFFFF;
   box-sizing: border-box;
 }
 
-h1 {
+.filter h1 {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   color: #ffffff;
@@ -514,7 +514,7 @@ h1 {
   font-weight: 700;
 }
 
-h3 {
+.adv h3 {
   text-transform: uppercase;
   color: #000000;
   font-size: 24px;
