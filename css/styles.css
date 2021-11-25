@@ -563,6 +563,7 @@ color: #FFFFFF;
   align-items: center;
   padding: 0px;
   min-width: 250px;
+  max-width: 380px;
   margin: 0px -32px;
   flex-wrap: wrap;
 }
@@ -954,9 +955,9 @@ img.devil-bridge-image {
   width: 100%;
   height: 100%;
   width: 1200px;
-  height: 408px;
+  min-height: 408px;
   font-family: inherit;
-  padding: 30px 72px 80px 72px;
+  padding: 30px 72px 60px 72px;
   box-sizing: border-box;
 }
 
@@ -1354,6 +1355,10 @@ opacity: 0.3;
   border:2px #698FA9 solid;
 }
 
+.catalog-view a:active {
+  border:2px #000000 solid;
+}
+
 .catalog-view-сards {
   background-image: url(../img/svg/mode-tile.svg);
   background-size: 100% auto;
@@ -1442,6 +1447,8 @@ opacity: 0.3;
   /*justify-content: space-between;*/
   min-height: 123px;
   margin:0px auto auto 38px;
+  max-width: 624px;
+  flex-wrap: wrap;
 }
 
 .card-content a {
