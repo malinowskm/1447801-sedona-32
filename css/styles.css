@@ -659,9 +659,20 @@ li.navigation-item {
 
 .navigation-search {
   display: block;
-  background-repeat: no-repeat;
+
   background-size: 18px 18px;
+  border: 3px #ffffff solid;
 }
+
+.navigation-search:focus {
+  display: block;
+  border: 3px #83B3D3 solid;
+}
+
+.navigation-search:active {
+  opacity: 0,3;
+}
+
 
 .banner-text {
   font-family: inherit;
